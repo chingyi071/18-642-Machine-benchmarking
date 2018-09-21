@@ -7,12 +7,14 @@
 
 int main(){
 	clock_t start_t, end_t;
-	int sum = 0;
+	int i, sum = 0;
+
 	start_t = clock();
-	for( int i=0; i<ITER; i++ ){
+	for( i=0; i<ITER; i++ ){
 		sum += 1;  // Here is the comment
 	}
 	end_t = clock();
+
 	long int cycle = end_t - start_t;
 	printf("Total clock = %ld\n", cycle);
 	printf("Latency = %lf cycles\n", (double)cycle/ITER);
