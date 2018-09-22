@@ -13,7 +13,7 @@ int main(){
 	clock_t start_t, end_t;
 	int i, sum = 0;
 	__m256d vsum, vsrc;
-	double tmp[4];
+	double ALIGN tmp[4];
 
 	// Data initialization
 	tmp[0] = 0.; vsum = _mm256_load_pd(tmp);
