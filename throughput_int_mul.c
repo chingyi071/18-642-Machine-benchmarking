@@ -14,12 +14,20 @@ unsigned long long rdtsc(){
 
 int main(){
 	unsigned long long start_t, end_t;
-	int i, sum[1];
+	int i;
+	int sum0=0, sum1=0, sum2=0, sum3=0, sum4=0, sum5=0, sum6=0, sum7=0, sum8=0;
 
 	start_t = rdtsc();
 	for( i=0; i<ITER; i++ ){
-		sum[0] = sum[1]*sum[2];
-		sum[3] = sum[4]*sum[5];
+		sum0 *= 170;
+		sum1 *= 170;
+		sum2 *= 170;
+		sum3 *= 170;
+		sum4 *= 170;
+		// sum5 *= 170;
+		// sum6 *= 170;
+		// sum7 *= 170;
+		// sum8 *= 170;
 	}
 	end_t = rdtsc();
 
